@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niwa ni wa Niwa Niwatori ga Ita · Jurnal Piket Kandang</title>
+<meta name="description" content="Fan blog untuk one-shot pertama Tatsuki Fujimoto, Niwa ni wa Niwa Niwatori ga Ita (庭には二羽ニワトリがいた): cerita, karakter, anime 17-26, dan filter spoiler.">
+<meta property="og:title" content="庭には二羽ニワトリがいた。 · Niwatori fan blog">
+<meta property="og:description" content="Bumi kalah perang. Manusia sudah punah. Katanya. Dua ekor ayam di halaman sekolah menyimpan rahasia.">
+<meta property="og:image" content="assets/img/kv-1080.webp">
+<meta name="theme-color" content="#fffaf0">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Dela+Gothic+One&family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body data-spoiler="0">
+
+<a class="skip" href="#jurnal" data-i18n="skip">Lewati ke isi</a>
+
+<!-- ============ HEADER ============ -->
+<header class="top" id="top">
+  <a class="brand" href="#hero" aria-label="Niwatori, ke atas">
+    <span class="hen hen--xs" aria-hidden="true"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span>
+    <span class="brand__name">Niwatori<span class="brand__dot">.</span></span>
+  </a>
+  <nav class="nav" aria-label="Navigasi utama">
+    <a href="#judul" data-i18n="nav.title">Judul</a>
+    <a href="#jurnal" data-i18n="nav.story">Cerita</a>
+    <a href="#penghuni" data-i18n="nav.chars">Karakter</a>
+    <a href="#inspeksi" data-i18n="nav.game">Inspeksi</a>
+    <a href="#anime" data-i18n="nav.anime">Anime</a>
+    <a href="#manga" data-i18n="nav.manga">Manga</a>
+  </nav>
+  <div class="top__tools">
+    <button class="mask-switch" id="spoilerBtn" aria-haspopup="dialog" aria-controls="gate">
+      <span class="mask-switch__hen hen hen--xs" aria-hidden="true"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span>
+      <span class="mask-switch__label"><span data-i18n="spoiler.label">Spoiler</span>: <b id="spoilerName">Aman</b></span>
+    </button>
+    <div class="lang" role="group" aria-label="Bahasa / Language">
+      <button data-lang="id" aria-pressed="true">ID</button><button data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ SPOILER GATE ============ -->
+<dialog class="gate" id="gate" aria-labelledby="gateTitle">
+  <form method="dialog" class="gate__card">
+    <p class="label" data-i18n="gate.kicker">Pemeriksaan sebelum masuk kandang</p>
+    <h2 id="gateTitle" data-i18n="gate.title">Seberapa jauh kamu sudah tahu ceritanya?</h2>
+    <p class="gate__lede" data-i18n="gate.lede">Bagian yang membocorkan cerita memakai topeng ayam. Pilih level di bawah. Kamu bisa menggantinya kapan saja lewat tombol <b>Spoiler</b> di atas.</p>
+    <div class="gate__opts">
+      <button value="0" class="gate__opt">
+        <span class="gate__masks" aria-hidden="true"><span class="hen hen--sm"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span><span class="hen hen--sm"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span></span>
+        <b data-i18n="lv0.name">Aman</b>
+        <span data-i18n="lv0.desc">Belum baca, belum nonton. Hanya premis.</span>
+      </button>
+      <button value="1" class="gate__opt">
+        <span class="gate__masks" aria-hidden="true"><span class="hen hen--sm is-off"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span><span class="hen hen--sm"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span></span>
+        <b data-i18n="lv1.name">Separuh</b>
+        <span data-i18n="lv1.desc">Tunjukkan konflik tengah cerita, simpan twist dan akhirnya.</span>
+      </button>
+      <button value="2" class="gate__opt gate__opt--night">
+        <span class="gate__masks" aria-hidden="true"><span class="hen hen--sm is-off"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span><span class="hen hen--sm is-off"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span></span>
+        <b data-i18n="lv2.name">Lepas topeng</b>
+        <span data-i18n="lv2.desc">Sudah tamat. Buka semua, termasuk twist dan ending.</span>
+      </button>
+    </div>
+  </form>
+</dialog>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero__sky" aria-hidden="true"></div>
+  <div class="hero__grid wrap">
+    <div class="hero__copy">
+      <p class="label reveal"><span data-i18n="hero.kicker">One-shot pertama Tatsuki Fujimoto · digambar di usia 17</span></p>
+      <h1 class="hero__jp reveal" lang="ja" aria-label="庭には二羽ニワトリがいた。">
+        <span class="hero__jp-line"><span class="k-niwa">庭</span>には</span>
+        <span class="hero__jp-line"><span class="k-niwa">二羽</span><span class="k-tori">ニワトリ</span></span>
+        <span class="hero__jp-line">がいた<span class="hero__maru">。</span></span>
+      </h1>
+      <p class="hero__romaji reveal">Niwa ni wa Niwa Niwatori ga Ita</p>
+      <p class="hero__en reveal" data-i18n="hero.en">Judul Inggris: <i>A Couple Clucking Chickens Were Still Kickin' in the Schoolyard</i></p>
+      <p class="hero__lede reveal" data-i18n="hero.lede">Bumi kalah perang melawan alien. Manusia sudah punah. <em>Katanya.</em> Di halaman sebuah sekolah alien, ada dua ekor ayam yang terlalu pandai untuk ukuran ayam.</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--ink" href="#jurnal" data-i18n="hero.cta1">Buka jurnal piket</a>
+        <a class="btn btn--ghost" href="#anime" data-pv-jump data-i18n="hero.cta2">Tonton PV anime</a>
+      </div>
+    </div>
+
+    <div class="hero__art reveal">
+      <figure class="hero__kv">
+        <img src="assets/img/kv-1080.webp" srcset="assets/img/kv-640.webp 640w, assets/img/kv-1080.webp 1080w" sizes="(max-width: 860px) 90vw, 440px" width="1080" height="1519" alt="Key visual anime: Ami melepas kepala ayamnya, Yuto berdiri di belakangnya, dikelilingi murid alien." fetchpriority="high">
+        <figcaption>© Tatsuki Fujimoto / Shueisha · 「藤本タツキ 17-26」製作委員会</figcaption>
+      </figure>
+      <div class="hero__pair" aria-hidden="true">
+        <button class="hen hen--lg hen--live" tabindex="-1" data-cluck><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></button>
+        <button class="hen hen--md hen--live" tabindex="-1" data-cluck><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></button>
+      </div>
+      <p class="hero__hint" data-i18n="hero.hint">psst, ayamnya bisa diklik</p>
+    </div>
+  </div>
+
+  <div class="ticker" aria-label="Fakta singkat">
+    <div class="ticker__track">
+      <span data-i18n="tick.1">Naskah lomba 2011</span><i>✳</i>
+      <span data-i18n="tick.2">Dimuat di kumpulan 17-21 (2021)</span><i>✳</i>
+      <span data-i18n="tick.3">Episode 1 anime 藤本タツキ 17-26</span><i>✳</i>
+      <span data-i18n="tick.4">Animasi: ZEXCS</span><i>✳</i>
+      <span data-i18n="tick.5">Terpilih di Annecy 2026</span><i>✳</i>
+      <span data-i18n="tick.6">Sci-fi · komedi gelap</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.1">Naskah lomba 2011</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.2">Dimuat di kumpulan 17-21 (2021)</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.3">Episode 1 anime 藤本タツキ 17-26</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.4">Animasi: ZEXCS</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.5">Terpilih di Annecy 2026</span><i>✳</i>
+      <span aria-hidden="true" data-i18n="tick.6">Sci-fi · komedi gelap</span><i>✳</i>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TITLE / TONGUE TWISTER ============ -->
+<section class="sec judul" id="judul">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="judul.kicker">Halaman 1 · Soal judul</p>
+      <h2 data-i18n="judul.h">Judulnya adalah <span class="hl">plesetan tongue twister</span>.</h2>
+      <p class="sec__lede" data-i18n="judul.lede">Di Jepang ada <i>hayakuchi kotoba</i> (kalimat cepat) terkenal: <span lang="ja">庭には二羽鶏がいる</span>, "di halaman ada dua ekor ayam". Bunyi <b>niwa</b> muncul tiga kali dengan tiga arti. Fujimoto mengubah satu hal kecil: <b>iru</b> (ada) menjadi <b>ita</b> (pernah ada). Klik tiap potongan.</p>
+    </header>
+
+    <div class="twister reveal" id="twister">
+      <div class="twister__line" lang="ja">
+        <button class="tw" data-k="niwa1"><span class="tw__jp">庭</span><span class="tw__ro">niwa</span></button>
+        <button class="tw tw--p" data-k="niwa"><span class="tw__jp">には</span><span class="tw__ro">ni wa</span></button>
+        <button class="tw" data-k="niwa2"><span class="tw__jp">二羽</span><span class="tw__ro">niwa</span></button>
+        <button class="tw" data-k="niwa3"><span class="tw__jp">ニワトリ</span><span class="tw__ro">niwatori</span></button>
+        <button class="tw tw--p" data-k="ga"><span class="tw__jp">が</span><span class="tw__ro">ga</span></button>
+        <button class="tw tw--red" data-k="ita"><span class="tw__jp">いた。</span><span class="tw__ro">ita</span></button>
+      </div>
+      <div class="twister__card" aria-live="polite">
+        <p class="label" id="twLabel" data-i18n="tw.pick">Pilih satu potongan</p>
+        <p class="twister__def" id="twDef" data-i18n="tw.intro">Setiap <b>niwa</b> terdengar sama, tapi artinya beda. Inilah yang membuat kalimat ini sulit diucapkan cepat.</p>
+      </div>
+      <div class="twister__speed">
+        <button class="btn btn--comb" id="twSay"><span data-i18n="tw.say">Ucapkan cepat</span> <span class="twister__x" id="twX">×1</span></button>
+        <p class="muted small" data-i18n="tw.sayhint">Setiap klik makin cepat. Bisa ikut membaca sampai ×5?</p>
+      </div>
+      <figure class="twister__note">
+        <span class="stamp">いる → いた</span>
+        <figcaption data-i18n="tw.note">Satu huruf, bentuk lampau. Judulnya bukan "ada dua ayam", tapi "dulu ada dua ayam". Simpan pikiran itu sampai halaman terakhir.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNAL / STORY ============ -->
+<section class="sec jurnal" id="jurnal">
+  <div class="jurnal__sky" aria-hidden="true"></div>
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="jur.kicker">Halaman 2 · 飼育日誌 · Jurnal piket hewan</p>
+      <h2 data-i18n="jur.h">Catatan piket kandang, ditulis seorang murid alien.</h2>
+      <p class="sec__lede" data-i18n="jur.lede">Cerita ini dibuka dari sudut pandang yang tidak terduga: penjajahnya. Di bawah ini ringkasan cerita versi buku piket. Entri yang membocorkan cerita memakai topeng sesuai level spoiler kamu.</p>
+    </header>
+
+    <ol class="log">
+      <li class="log__entry reveal">
+        <div class="log__meta"><span class="log__day">01</span><span class="label" data-i18n="log.1.t">Latar</span></div>
+        <div class="log__body">
+          <h3 data-i18n="log.1.h">Perang sudah selesai. Kita yang menang.</h3>
+          <p data-i18n="log.1.p">Alien datang, berperang, dan menang. Bagi mereka manusia adalah makanan, dan manusia dinyatakan punah. Kehidupan berjalan normal: sekolah tetap buka, murid alien tetap belajar, dan halaman sekolah punya hewan peliharaan.</p>
+        </div>
+      </li>
+      <li class="log__entry reveal">
+        <div class="log__meta"><span class="log__day">02</span><span class="label" data-i18n="log.2.t">Tugas piket</span></div>
+        <div class="log__body">
+          <h3 data-i18n="log.2.h">Pemberian pakan: dua ekor ayam.</h3>
+          <p data-i18n="log.2.p">Yohei, murid alien yang rajin, bertugas merawat dua ayam di halaman. Untungnya, alien tidak suka makan daging ayam. Ayam aman di sekolah ini.</p>
+          <ul class="checks">
+            <li class="is-done" data-i18n="log.2.c1">Isi wadah pakan</li>
+            <li class="is-done" data-i18n="log.2.c2">Ganti air minum</li>
+            <li data-i18n="log.2.c3">Pastikan mereka benar-benar ayam</li>
+          </ul>
+        </div>
+      </li>
+      <li class="log__entry reveal">
+        <div class="log__meta"><span class="log__day">03</span><span class="label" data-i18n="log.3.t">Pengamatan</span></div>
+        <div class="log__body">
+          <h3 data-i18n="log.3.h">Ayamnya pakai jaket.</h3>
+          <p data-i18n="log.3.p">Dua "ayam" itu adalah Yuto dan Ami, dua anak manusia yang selamat. Mereka memakai kepala ayam buatan dan hidup di kandang supaya tidak dimakan. Penyamaran yang bodoh, tapi sejauh ini berhasil.</p>
+          <figure class="log__fig">
+            <img src="assets/img/garden.webp" width="800" height="450" loading="lazy" alt="Yuto dan Ami dengan kepala ayam berdiri di rumput di samping dinding sekolah yang retak.">
+            <figcaption>© 「藤本タツキ 17-26」製作委員会</figcaption>
+          </figure>
+        </div>
+      </li>
+      <li class="log__entry reveal">
+        <div class="log__meta"><span class="log__day">04</span><span class="label" data-i18n="log.4.t">Keputusan</span></div>
+        <div class="log__body">
+          <h3 data-i18n="log.4.h">Aku tahu rahasia mereka. Aku tidak melapor.</h3>
+          <p data-i18n="log.4.p">Yohei menyadari siapa sebenarnya dua ayam itu. Ia tidak setuju dengan pembantaian manusia, jadi ia memilih diam dan membantu mereka bertahan. Dari sini cerita berubah dari komedi aneh menjadi cerita tentang empati.</p>
+        </div>
+      </li>
+
+      <li class="log__entry reveal" data-sp="1">
+        <div class="log__meta"><span class="log__day">05</span><span class="label" data-i18n="log.5.t">Murid pindahan</span></div>
+        <div class="log__body spoil">
+          <h3 data-i18n="log.5.h">Murid baru itu suka makan ayam.</h3>
+          <p data-i18n="log.5.p">Seorang murid pindahan datang, dan ia justru menyukai daging ayam. Dalam wujud aslinya ia menyerang dan nyaris memakan Ami. Yohei ikut berubah wujud untuk menghentikannya, lalu membawa keduanya kabur ke tempat ia mengaku menyembunyikan manusia lain yang ia selamatkan.</p>
+          <figure class="log__fig">
+            <img src="assets/img/transfer-student.webp" width="640" height="360" loading="lazy" alt="Murid alien berkepala merah muda bertanduk dengan latar cahaya warna-warni.">
+            <figcaption>© 「藤本タツキ 17-26」製作委員会</figcaption>
+          </figure>
+        </div>
+      </li>
+      <li class="log__entry reveal" data-sp="1">
+        <div class="log__meta"><span class="log__day">06</span><span class="label" data-i18n="log.6.t">Tempat persembunyian</span></div>
+        <div class="log__body spoil">
+          <h3 data-i18n="log.6.h">Tempat itu sudah sunyi.</h3>
+          <p data-i18n="log.6.p">Manusia yang disembunyikan Yohei ternyata sudah mati. Harapan bahwa masih ada manusia lain di luar sana runtuh di satu halaman.</p>
+        </div>
+      </li>
+      <li class="log__entry log__entry--night reveal" data-sp="2">
+        <div class="log__meta"><span class="log__day">07</span><span class="label" data-i18n="log.7.t">Polisi</span></div>
+        <div class="log__body spoil">
+          <h3 data-i18n="log.7.h">Kepalan raksasa dari langit.</h3>
+          <p data-i18n="log.7.p">Sebuah tinju raksasa menghantam dan membunuh Yohei. Pemiliknya, alien biru yang sangat besar, memperkenalkan diri sebagai "polisi" dan berkata tidak ada satu manusia pun yang pantas hidup.</p>
+        </div>
+      </li>
+      <li class="log__entry log__entry--night reveal" data-sp="2">
+        <div class="log__meta"><span class="log__day">08</span><span class="label" data-i18n="log.8.t">Topeng dilepas</span></div>
+        <div class="log__body spoil">
+          <h3 data-i18n="log.8.h">Ayam kedua bukan manusia.</h3>
+          <p data-i18n="log.8.p">Yuto ternyata alien. Dialah yang memakan teman-teman sekelas Ami saat mereka berlatih drama. Di tengah pembantaian ia berubah pikiran, membuat Ami pingsan, lalu menyamar menjadi manusia dan berpura-pura sesama penyintas. Sekarang ia mengaku dan mengancam akan memakan Ami, semata supaya Ami takut dan lari menyelamatkan diri.</p>
+          <figure class="log__fig">
+            <img src="assets/img/leap.webp" width="640" height="360" loading="lazy" alt="Siluet makhluk bertanduk melompat di langit senja merah muda.">
+            <figcaption>© 「藤本タツキ 17-26」製作委員会</figcaption>
+          </figure>
+        </div>
+      </li>
+      <li class="log__entry log__entry--night reveal" data-sp="2">
+        <div class="log__meta"><span class="log__day">09</span><span class="label" data-i18n="log.9.t">Entri terakhir</span></div>
+        <div class="log__body spoil">
+          <h3 data-i18n="log.9.h">Dulu ada dua ayam di halaman.</h3>
+          <p data-i18n="log.9.p">Yuto berubah menjadi monster dan melawan sang polisi untuk memberi Ami waktu kabur. Cerita berhenti di tengah pertarungan, tanpa memastikan nasib keduanya. Kata <b>ita</b> di judul akhirnya terasa: halaman itu pernah punya dua ayam, dan sekarang tidak lagi.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ CHARACTERS ============ -->
+<section class="sec penghuni" id="penghuni">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="ch.kicker">Halaman 3 · Daftar penghuni</p>
+      <h2 data-i18n="ch.h">Siapa saja di halaman sekolah ini.</h2>
+      <p class="sec__lede" data-i18n="ch.lede">Klik kartu untuk melepas kepala ayam. Kolom rahasia tetap tertutup sesuai level spoiler.</p>
+    </header>
+
+    <div class="cast">
+      <article class="card card--hen reveal" tabindex="0" aria-label="Yuto">
+        <div class="card__art card__art--yuto">
+          <img class="card__bg" src="assets/img/yuto-bg.webp" alt="" width="560" height="560" loading="lazy">
+          <img class="card__img" src="assets/img/yuto.webp" width="800" height="1067" loading="lazy" alt="Yuto memakai kepala ayam, hoodie abu-abu, dan celana jeans.">
+        </div>
+        <div class="card__body">
+          <p class="label">ユウト · CV 小野賢章 (Kenshō Ono)</p>
+          <h3>Yuto</h3>
+          <p data-i18n="ch.yuto">Anak laki-laki pendiam yang hampir tidak pernah melepas kepala ayamnya. Selalu berdiri di depan Ami, seperti tameng.</p>
+          <dl class="card__secret" data-sp="2"><dt data-i18n="ch.secret">Rahasia</dt><dd class="spoil" data-i18n="ch.yuto.s">Alien yang menyamar. Ia pemakan teman-teman Ami yang kemudian berubah pikiran dan memilih melindunginya. Wujud monsternya sering dibandingkan pembaca dengan Pochita dari Chainsaw Man.</dd></dl>
+        </div>
+      </article>
+
+      <article class="card card--hen reveal" tabindex="0" aria-label="Ami">
+        <div class="card__art card__art--ami">
+          <img class="card__bg" src="assets/img/ami-bg.webp" alt="" width="560" height="560" loading="lazy">
+          <img class="card__img" src="assets/img/ami.webp" width="800" height="1067" loading="lazy" alt="Ami memakai kepala ayam dan jubah biru, wajahnya terlihat dari lubang mulut topeng.">
+        </div>
+        <div class="card__body">
+          <p class="label">アミ · CV 桜井しおん (Shion Sakurai)</p>
+          <h3>Ami</h3>
+          <p data-i18n="ch.ami">Anak perempuan yang selamat dari serangan di sekolahnya. Wajahnya mengintip dari lubang topeng, masih percaya bahwa mereka berdua adalah manusia terakhir.</p>
+          <dl class="card__secret" data-sp="2"><dt data-i18n="ch.secret">Rahasia</dt><dd class="spoil" data-i18n="ch.ami.s">Satu-satunya manusia sungguhan di kandang. Orang yang paling ia percaya adalah pelaku yang memakan teman-temannya.</dd></dl>
+        </div>
+      </article>
+
+      <article class="card card--plain reveal">
+        <div class="card__swatch card__swatch--grass"><span class="alien-face" aria-hidden="true"><i></i><i></i></span></div>
+        <div class="card__body">
+          <p class="label">陽平 · CV 浦和希 (Kazuki Ura)</p>
+          <h3>Yohei</h3>
+          <p data-i18n="ch.yohei">Murid alien yang bertugas memberi makan ayam. Diam-diam menentang pembantaian manusia dan memilih menolong.</p>
+          <dl class="card__secret" data-sp="2"><dt data-i18n="ch.fate">Nasib</dt><dd class="spoil" data-i18n="ch.yohei.s">Dibunuh oleh alien polisi saat mengantar Yuto dan Ami ke tempat persembunyian.</dd></dl>
+        </div>
+      </article>
+
+      <article class="card card--plain reveal">
+        <div class="card__swatch card__swatch--yolk"><span class="alien-face alien-face--bug" aria-hidden="true"><i></i><i></i></span></div>
+        <div class="card__body">
+          <p class="label">金田萌美 · CV 斉藤貴美子 (Kimiko Saitō)</p>
+          <h3>Moemi Kaneda</h3>
+          <p data-i18n="ch.moemi">Murid alien berwujud serangga dan kekasih Yohei.</p>
+          <dl class="card__secret" data-sp="2"><dt data-i18n="ch.fate">Nasib</dt><dd class="spoil" data-i18n="ch.moemi.s">Menemukan jasad Yohei dan sadar bahwa bangsanya sendiri tidak lebih peduli pada sesama alien daripada pada manusia.</dd></dl>
+        </div>
+      </article>
+
+      <article class="card card--plain reveal">
+        <div class="card__swatch card__swatch--comb"><span class="alien-face alien-face--horn" aria-hidden="true"><i></i><i></i></span></div>
+        <div class="card__body">
+          <p class="label">遠藤マサトシ · CV 岩田光央 (Mitsuo Iwata)</p>
+          <h3>Masatoshi Endō</h3>
+          <p data-i18n="ch.endo">Salah satu murid alien di sekolah itu, tercantum di daftar pemeran resmi anime.</p>
+        </div>
+      </article>
+
+      <article class="card card--plain card--night reveal" data-sp="2">
+        <div class="card__swatch card__swatch--night"><span class="alien-face alien-face--big" aria-hidden="true"><i></i><i></i></span></div>
+        <div class="card__body spoil">
+          <p class="label">警察宇宙人 · CV 土師孝也 (Takaya Hashi)</p>
+          <h3 data-i18n="ch.cop">Alien polisi</h3>
+          <p data-i18n="ch.cop.p">Alien biru raksasa yang memburu manusia terakhir. Sutradara anime menyebut perannya sebagai salah satu casting yang paling berkesan.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MINI GAME ============ -->
+<section class="sec inspeksi" id="inspeksi">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="g.kicker">Halaman 4 · Simulasi</p>
+      <h2 data-i18n="g.h">Inspeksi kandang: jangan sampai ketahuan.</h2>
+      <p class="sec__lede" data-i18n="g.lede">Kamu manusia di dalam kostum ayam, dan kamu lapar. Tahan tombol untuk makan roti selagi pengawas alien membelakangi kandang. Begitu matanya mulai bergetar, ia akan menoleh. Lepaskan sebelum ketahuan.</p>
+    </header>
+
+    <div class="game reveal" id="game" data-state="idle">
+      <div class="game__stage">
+        <div class="game__watcher" id="watcher" aria-hidden="true">
+          <div class="watcher">
+            <span class="watcher__horn"></span>
+            <span class="watcher__eye"><i></i></span>
+            <span class="watcher__back"></span>
+          </div>
+          <p class="game__status" id="gStatus" aria-live="polite" data-i18n="g.ready">Siap?</p>
+        </div>
+        <div class="game__coop">
+          <span class="hen hen--md game__hen" id="gHen" aria-hidden="true"><i class="hen__eyes"></i><i class="hen__beak"></i><i class="hen__hole"></i></span>
+          <span class="game__bread" aria-hidden="true">🍞</span>
+          <div class="game__grass" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="game__hud">
+        <div class="meter"><span class="label" data-i18n="g.full">Kenyang</span><div class="meter__bar"><i id="gBar"></i></div><b id="gScore">0</b></div>
+        <p class="label"><span data-i18n="g.best">Rekor</span>: <b id="gBest">0</b></p>
+      </div>
+      <div class="game__ctrl">
+        <button class="btn btn--ink" id="gStart" data-i18n="g.start">Mulai inspeksi</button>
+        <button class="btn btn--comb game__eat" id="gEat" disabled><span data-i18n="g.eat">Tahan untuk makan</span> <kbd>Spasi</kbd></button>
+      </div>
+      <div class="game__result" id="gResult" hidden>
+        <span class="stamp stamp--big" id="gStamp">LULUS</span>
+        <p id="gMsg"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY IT MATTERS ============ -->
+<section class="sec benih" id="benih">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="b.kicker">Halaman 5 · Kenapa layak dibaca</p>
+      <h2 data-i18n="b.h">Benih-benih Fujimoto, sudah ada di usia 17.</h2>
+    </header>
+    <div class="bento">
+      <article class="tile tile--comb reveal">
+        <span class="tile__num">17</span>
+        <h3 data-i18n="b.1.h">Karya pertama yang dikirim ke lomba</h3>
+        <p data-i18n="b.1.p">Fujimoto mengirim naskah ini saat berusia 17 tahun dan menjadi finalis. Belum dipoles, tanpa tahap storyboard, tapi suaranya sudah terdengar jelas.</p>
+      </article>
+      <article class="tile tile--yolk reveal">
+        <h3 data-i18n="b.2.h">Tertawa dulu, sakit kemudian</h3>
+        <p data-i18n="b.2.p">Dibuka dengan lelucon (manusia pura-pura jadi ayam), ditutup dengan kehilangan. Pola ini kembali di Look Back, Goodbye Eri, dan Chainsaw Man.</p>
+      </article>
+      <article class="tile tile--grass reveal">
+        <h3 data-i18n="b.3.h">Empati untuk pihak yang "salah"</h3>
+        <p data-i18n="b.3.p">Yang paling manusiawi di cerita ini justru seorang alien yang memberi makan ayam. Fujimoto suka menaruh kebaikan di tempat yang tidak kita duga.</p>
+      </article>
+      <article class="tile tile--paper reveal">
+        <h3 data-i18n="b.4.h">Pendek, padat, sekali duduk</h3>
+        <p data-i18n="b.4.p">Satu one-shot, bisa selesai dalam satu sesi baca. Pintu masuk yang pas sebelum mencoba karya Fujimoto yang lebih panjang.</p>
+      </article>
+      <article class="tile tile--night reveal" data-sp="2">
+        <div class="spoil">
+          <h3 data-i18n="b.5.h">Monster yang memilih melindungi</h3>
+          <p data-i18n="b.5.p">Makhluk menakutkan yang bertarung demi satu orang manusia. Banyak pembaca melihat wujud Yuto sebagai cikal bakal Pochita dan Chainsaw Man.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANIME ============ -->
+<section class="sec anime" id="anime">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="a.kicker">Halaman 6 · Adaptasi anime</p>
+      <h2 data-i18n="a.h">Episode pembuka <span lang="ja">藤本タツキ 17-26</span>.</h2>
+      <p class="sec__lede" data-i18n="a.lede">Delapan one-shot awal Fujimoto diadaptasi menjadi antologi anime oleh enam studio dan tujuh sutradara. Cerita ayam ini menjadi episode pertama, dan kemudian terpilih di kompetisi Midnight Short Film, Festival Animasi Annecy 2026.</p>
+    </header>
+
+    <div class="anime__grid">
+      <div class="pv reveal">
+        <button class="pv__btn" id="pvBtn" data-yt="9c7ItTFlmFs" aria-label="Putar PV spesial">
+          <img src="assets/img/pv-thumb.webp" width="800" height="450" loading="lazy" alt="Thumbnail PV spesial 藤本タツキ 17-26 untuk 庭には二羽ニワトリがいた。">
+          <span class="pv__play" aria-hidden="true"></span>
+        </button>
+        <p class="muted small" data-i18n="a.pvnote">PV spesial resmi (avex pictures). Video baru dimuat setelah diklik.</p>
+      </div>
+
+      <div class="facts reveal">
+        <table>
+          <tbody>
+            <tr><th data-i18n="f.dir">Sutradara & naskah</th><td>長屋誠志郎 Seishirō Nagaya</td></tr>
+            <tr><th data-i18n="f.cd">Desain karakter</th><td>もああん Moaang</td></tr>
+            <tr><th data-i18n="f.studio">Studio</th><td>ZEXCS</td></tr>
+            <tr><th data-i18n="f.music">Musik</th><td>石塚玲依 Rei Ishizuka</td></tr>
+            <tr><th data-i18n="f.sound">Sutradara suara</th><td>亀山俊樹 Toshiki Kameyama</td></tr>
+            <tr><th data-i18n="f.art">Art director</th><td>Yoshio Tanioka</td></tr>
+            <tr><th data-i18n="f.theater">Bioskop Jepang</th><td data-i18n="f.theater.v">17 Oktober 2025 (Part-1)</td></tr>
+            <tr><th data-i18n="f.stream">Streaming</th><td data-i18n="f.stream.v">Prime Video, sejak 8 November 2025</td></tr>
+            <tr><th>Blu-ray</th><td data-i18n="f.bd.v">30 September 2026</td></tr>
+            <tr><th data-i18n="f.fest">Festival</th><td data-i18n="f.fest.v">Annecy 2026, Midnight Short Film Competition</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="strip reveal">
+      <figure><img src="assets/img/anime-kv.webp" width="1000" height="700" loading="lazy" alt="Key visual gabungan anime 藤本タツキ 17-26."><figcaption data-i18n="a.cap1">Key visual antologi 17-26</figcaption></figure>
+      <figure><img src="assets/img/garden-still.webp" width="640" height="360" loading="lazy" alt="Cuplikan anime: Yuto dan Ami berdiri di halaman sekolah."><figcaption data-i18n="a.cap2">Halaman sekolah, siang hari</figcaption></figure>
+      <figure data-sp="2"><div class="spoil"><img src="assets/img/leap.webp" width="640" height="360" loading="lazy" alt="Cuplikan anime: siluet makhluk melompat di langit senja."><figcaption data-i18n="a.cap3">Senja, menjelang akhir</figcaption></div></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MANGA ============ -->
+<section class="sec manga" id="manga">
+  <div class="wrap manga__grid">
+    <figure class="manga__cover reveal">
+      <img src="assets/img/cover-1721.webp" width="520" height="819" loading="lazy" alt="Sampul kumpulan one-shot Tatsuki Fujimoto 17-21.">
+      <figcaption>© Tatsuki Fujimoto / Shueisha</figcaption>
+    </figure>
+    <div class="manga__copy">
+      <header class="sec__head reveal">
+        <p class="label" data-i18n="m.kicker">Halaman 7 · Versi manga</p>
+        <h2 data-i18n="m.h">Baca aslinya di kumpulan <i>17-21</i>.</h2>
+        <p class="sec__lede" data-i18n="m.lede">Cerita ini adalah pembuka buku <span lang="ja">藤本タツキ短編集「17-21」</span>, kumpulan empat one-shot yang Fujimoto gambar antara usia 17 dan 21 tahun.</p>
+      </header>
+      <dl class="spec reveal">
+        <div><dt data-i18n="m.orig">Judul asli</dt><dd lang="ja">庭には二羽ニワトリがいた</dd></div>
+        <div><dt data-i18n="m.made">Dibuat</dt><dd data-i18n="m.made.v">2011, naskah lomba (finalis)</dd></div>
+        <div><dt data-i18n="m.web">Terbit online</dt><dd>Shōnen Jump+ (2017)</dd></div>
+        <div><dt data-i18n="m.jp">Buku Jepang</dt><dd data-i18n="m.jp.v">Shueisha, 4 Oktober 2021</dd></div>
+        <div><dt data-i18n="m.en">Edisi Inggris</dt><dd data-i18n="m.en.v">VIZ Media, <i>Tatsuki Fujimoto Before Chainsaw Man: 17-21</i>, 17 Januari 2023</dd></div>
+        <div><dt data-i18n="m.genre">Genre</dt><dd data-i18n="m.genre.v">Fiksi ilmiah, komedi gelap</dd></div>
+      </dl>
+      <div class="compare reveal">
+        <h3 data-i18n="m.cmp">Manga atau anime dulu?</h3>
+        <div class="compare__row">
+          <div class="compare__col"><b data-i18n="m.cmp.m">Manga</b><p data-i18n="m.cmp.mp">Kasar dan cepat, persis naskah anak 17 tahun. Kejutannya terasa lebih tiba-tiba.</p></div>
+          <div class="compare__col"><b data-i18n="m.cmp.a">Anime</b><p data-i18n="m.cmp.ap">Mengisi detail yang di manga hanya tersirat, dengan warna senja dan akting suara yang membuat twist-nya lebih menyakitkan.</p></div>
+        </div>
+        <p class="muted small" data-i18n="m.cmp.tip">Saran kami: baca manganya dulu (singkat), lalu tonton anime untuk merasakan ulang ceritanya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENDING (night) ============ -->
+<section class="sec akhir" id="akhir" data-sp="2">
+  <div class="wrap">
+    <header class="sec__head reveal">
+      <p class="label" data-i18n="e.kicker">Halaman terakhir · Zona spoiler penuh</p>
+      <h2 data-i18n="e.h">Kenapa "ita", bukan "iru".</h2>
+    </header>
+    <div class="spoil akhir__body reveal">
+      <p data-i18n="e.p1">Judul aslinya adalah tongue twister yang ceria: di halaman ada dua ekor ayam. Fujimoto hanya mengganti satu kata kerja menjadi bentuk lampau, dan itu sudah cukup untuk menjadikannya elegi.</p>
+      <p data-i18n="e.p2">Kedua "ayam" itu ternyata bukan dua manusia. Satu manusia, satu alien. Satu-satunya hal yang sama dari mereka adalah kostumnya. Penyamaran yang awalnya lucu berubah menjadi satu-satunya tempat di mana pemangsa dan mangsanya bisa hidup berdampingan.</p>
+      <p data-i18n="e.p3">Saat Yuto melepas topengnya, kandang itu berakhir. Yohei sudah tiada, Ami berlari, Yuto bertarung. Halaman sekolah itu dulu punya dua ayam. Sekarang tidak lagi.</p>
+      <p class="muted small" data-i18n="e.note">Ini interpretasi penulis blog, bukan pernyataan resmi Fujimoto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="sec faq" id="faq">
+  <div class="wrap wrap--narrow">
+    <header class="sec__head reveal">
+      <p class="label">FAQ</p>
+      <h2 data-i18n="q.h">Pertanyaan yang sering muncul.</h2>
+    </header>
+    <details class="reveal"><summary data-i18n="q.1">Apakah ini berhubungan dengan Chainsaw Man?</summary><p data-i18n="q.1a">Tidak secara cerita. Ini one-shot berdiri sendiri. Hubungannya ada pada gaya, tema, dan beberapa desain makhluk yang terasa seperti awal Chainsaw Man.</p></details>
+    <details class="reveal"><summary data-i18n="q.2">Di mana bisa menonton anime-nya?</summary><p data-i18n="q.2a">Di Prime Video sebagai episode 1 dari <i>Tatsuki Fujimoto 17-26</i>. Ketersediaan bisa berbeda per negara.</p></details>
+    <details class="reveal"><summary data-i18n="q.3">Di mana bisa membaca manganya?</summary><p data-i18n="q.3a">Di kumpulan <i>17-21</i> (Shueisha) atau edisi Inggris <i>Tatsuki Fujimoto Before Chainsaw Man: 17-21</i> dari VIZ Media. Dukung rilisan resmi.</p></details>
+    <details class="reveal"><summary data-i18n="q.4">Apakah cocok untuk semua umur?</summary><p data-i18n="q.4a">Kurang. Ada kekerasan dan kematian. Penayangan bioskop Part-1 di Jepang mendapat rating R15+.</p></details>
+    <details class="reveal"><summary data-i18n="q.5">Berapa lama untuk menyelesaikannya?</summary><p data-i18n="q.5a">Sekali duduk. Manganya satu bab, anime-nya satu episode pendek.</p></details>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__net">
+      <p class="label" data-i18n="ft.net">Jaringan blog Fujimoto</p>
+      <div class="foot__links">
+        <a class="netcard netcard--archive" href="https://dans-vsa.github.io/fujimoto-archive/" target="_blank" rel="noopener">
+          <span class="label">Hub</span><b>Fujimoto Archive</b><span data-i18n="ft.arch">Semua karya Tatsuki Fujimoto, tiap karya tersambung ke blognya.</span>
+        </a>
+        <a class="netcard netcard--bcm" href="https://dans-vsa.github.io/before-chainsaw-man-fanblog/17-21/#niwatori" target="_blank" rel="noopener">
+          <span class="label">17-21 · 22-26</span><b>Tatsuki Fujimoto Before Chainsaw Man</b><span data-i18n="ft.bcm">Delapan one-shot sebelum Chainsaw Man, termasuk cerita ayam ini.</span>
+        </a>
+      </div>
+    </div>
+    <div class="foot__base">
+      <p class="muted small" data-i18n="ft.disc">Fan blog tidak resmi, dibuat untuk memperkenalkan karya. Semua gambar © Tatsuki Fujimoto / Shueisha dan 「藤本タツキ 17-26」製作委員会, dipakai untuk keperluan ulasan. Dukung rilisan resmi.</p>
+      <a class="btn btn--ghost btn--sm" href="#hero" data-i18n="ft.top">Kembali ke kandang ↑</a>
+    </div>
+  </div>
+</footer>
+
+<div class="cluck-layer" aria-hidden="true"></div>
+
+<script src="js/i18n-en.js?v=2" defer></script>
+<script src="js/main.js?v=2" defer></script>
+</body>
+</html>
